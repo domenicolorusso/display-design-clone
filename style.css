@@ -1,0 +1,406 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-weight: 200;
+}
+
+body::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0e00ff;
+  outline: 1px solid #0e00ff;
+}
+h2 {
+  font-size: 40px;
+}
+a {
+  font-weight: 300;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #0e00ff;
+  transition: color 0.5s;
+}
+body {
+  font-size: 16px;
+  font-weight: 100;
+}
+.header {
+  height: 72px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h4 {
+  display: inline;
+}
+.header__list {
+  display: flex;
+  list-style: none;
+}
+.header__list li {
+  margin-left: 25px;
+}
+.main {
+  width: 100%;
+  padding: 0 40px;
+}
+.main__quote {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 80px 177px;
+  border-bottom: 1px solid rgb(172, 172, 172);
+}
+.main__quote a {
+  color: #0e00ff;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+.main__quote a:hover {
+  text-decoration: underline;
+}
+.main__projects {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  margin-bottom: 22px;
+}
+.main__projects a {
+  color: #0e00ff;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.main__projects a:hover {
+  text-decoration: underline;
+}
+
+/* -------------cards---------------- */
+
+.wrapperCards {
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.cardText {
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.transformCard:hover {
+  transition: all 0.3s linear;
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 0 5px 1px rgba(116, 116, 116, 0.4);
+}
+.wrapperCards__big {
+  background-image: url(https://d2egc8hndrs86n.cloudfront.net/uploads/work/vertical_image/93/display-lagunabecommerce-00vertical.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+  margin-right: 18px;
+}
+
+.wrapperCards__small1 {
+  background-image: url(https://d2egc8hndrs86n.cloudfront.net/uploads/work/main_image/132/display-rayban-000-main.jpg);
+  background-position: center;
+
+  grid-column-start: 2;
+  grid-row-start: 1;
+  margin-bottom: 18px;
+  margin-right: 18px;
+}
+.wrapperCards__small2 {
+  background-image: url(https://d2egc8hndrs86n.cloudfront.net/uploads/work/main_image/133/display-fabita-00main.jpg);
+  background-position: center;
+  background-size: auto;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  margin-bottom: 18px;
+}
+.wrapperCards__small3 {
+  background-image: url(https://d2egc8hndrs86n.cloudfront.net/uploads/work/main_image/130/display-waitandsee-00main.jpg);
+  background-position: center;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  margin-right: 18px;
+}
+.wrapperCards__small4 {
+  background-image: url(https://d2egc8hndrs86n.cloudfront.net/uploads/work/main_image/39/display-ingalleria-00main.jpg);
+  background-position: center;
+
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+/* -------------------details ------------------*/
+
+.details {
+  margin-top: 7vh;
+  display: flex;
+  justify-content: space-between;
+}
+.details h6 {
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 2vh;
+}
+.details p {
+  font-weight: 100;
+  line-height: 4vh;
+}
+
+.details__services {
+  padding-top: 3vh;
+  font-size: 20px;
+  border-top: 1px rgb(172, 172, 172) solid;
+}
+
+.details__clients {
+  padding-top: 3vh;
+  margin-left: 3vh;
+  font-size: 20px;
+  border-top: 1px rgb(172, 172, 172) solid;
+}
+.details__clients p {
+  font-size: 26px;
+}
+
+.projectIdea {
+  margin-top: 5vh;
+  widows: 100%;
+  height: 30vh;
+  background-color: rgb(240, 242, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.projectIdea :nth-child(1) {
+  font-size: 26px;
+  font-weight: 200;
+}
+.projectIdea :nth-child(2) {
+  margin-top: 3vh;
+  font-size: 20px;
+  font-weight: 200;
+}
+.projectIdea:hover {
+  background-color: #0e00ff;
+  color: white;
+  cursor: pointer;
+}
+
+/* ----------------footer ---------------*/
+footer {
+  font-size: 16px;
+  background-color: black;
+  width: 100%;
+  height: 40vh;
+  color: white;
+}
+footer a {
+  color: white;
+}
+.innerFooter {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0 40px;
+  padding: 40px;
+}
+.innerFooter__sx {
+  flex: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.innerFooter__dx {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.innerFooter__dx__wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+/* -------------MODAL---------------- */
+.btnClose{
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute;
+  right:10px;
+  top:10px;
+  transform: rotate(45deg);
+  color: rgb(182, 182, 182);
+}
+.btnClose:hover{
+  color: black;
+  transition: all 0.5s;
+}
+.btnSend{
+  font-size: 10px;
+  color: rgb(182, 182, 182);
+  text-transform: uppercase;
+  cursor: pointer;
+  position: absolute;
+  bottom:40px;
+  right:40px;
+}
+.btnSend:hover{
+  color: black;
+  transition: all 0.5s;
+}
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.modalHide {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.modal__overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.modal__card {
+  position: absolute;
+  width: 450px;
+  height: 406px;
+  padding: 40px;
+  background-color: white;
+}
+.modal__card__top {
+  display: flex;
+  justify-content: space-between;
+}
+.modal__card__top :nth-child(1){
+  font-style: normal;
+  color: black;
+}
+form{
+  display: flex;
+
+}
+.spanForm{
+  padding: 5px;
+  margin: 0;
+  border-bottom: 1px solid rgb(182, 182, 182);
+  
+}
+input{
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+  border: none;
+  border-left: 1px solid rgb(182, 182, 182);
+  border-bottom: 1px solid rgb(182, 182, 182);
+}
+input:focus{
+  outline: none;
+}
+.formSubject{
+  margin-top: 30px;
+}
+.formSubject input{
+  padding: 10px;
+}
+.modal__card p{
+  font-style: italic;
+  color: rgb(182, 182, 182);
+  margin-top: 20px;
+}
+/* -------------------media screen -------------------*/
+
+@media screen and (max-width: 960px) {
+  /*------------------- headermedia-------------- */
+
+  .header h4 {
+    display: none;
+  }
+  .main__quote {
+    display: flex;
+    align-items: flex-end;
+    padding: 80px 0 40px 0;
+    border-bottom: 1px solid rgb(172, 172, 172);
+  }
+  .main__quote h2 {
+    font-size: 30px;
+  }
+
+  /*------------------- cardsmedia -------------------- */
+  .wrapperCards {
+    height: 250vh;
+  }
+  .cardSize {
+    margin: 0;
+    flex: 1;
+    background-size: 150%;
+    margin-bottom: 18px;
+  }
+  .wrapperCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* -------------------detailsmedia------------------*/
+
+  .details {
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .details__clients {
+    font-size: 16px;
+  }
+  .details__clients {
+    margin-top: 7vh;
+    padding-top: 3vh;
+    margin-left: 0;
+    font-size: 20px;
+    border-top: 1px rgb(172, 172, 172) solid;
+  }
+  .details h6 {
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 2vh;
+  }
+  .details p {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 4vh;
+  }
+
+  /*------------------- footerMedia -------------------- */
+
+  .innerFooter__dx {
+    flex-direction: column;
+  }
+}
