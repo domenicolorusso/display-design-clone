@@ -149,7 +149,7 @@ body {
   grid-row-start: 2;
 }
 
-/* -------------------details ------------------*/
+/* -------------------projectdetails ------------------*/
 
 .details {
   margin-top: 7vh;
@@ -194,11 +194,13 @@ body {
   flex-direction: column;
 }
 .projectIdea :nth-child(1) {
+  cursor: pointer;
   z-index: 2;
   font-size: 26px;
   font-weight: 200;
 }
 .projectIdea :nth-child(2) {
+  cursor: pointer;
   z-index: 2;
   margin-top: 3vh;
   font-size: 20px;
@@ -299,6 +301,7 @@ footer a {
   justify-content: center;
   align-items: center;
   position: fixed;
+  z-index: 10;
   width: 100%;
   height: 100%;
 }
