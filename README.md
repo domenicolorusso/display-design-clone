@@ -1,7 +1,7 @@
 # display-design-clone
 
 
-created with html css javascript
-
+Created with html css javascript.
+(continuous development)
 
 Deploy: https://display-design-clone.vercel.app/
