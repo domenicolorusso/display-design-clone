@@ -194,12 +194,14 @@ body {
   flex-direction: column;
 }
 .projectIdea :nth-child(1) {
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
   cursor: pointer;
   z-index: 2;
   font-size: 26px;
   font-weight: 200;
 }
 .projectIdea :nth-child(2) {
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
   cursor: pointer;
   z-index: 2;
   margin-top: 3vh;
